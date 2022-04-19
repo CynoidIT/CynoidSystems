@@ -27,6 +27,7 @@ html,body{
 
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'robotomedium';
 }
 
 body{
@@ -44,32 +45,43 @@ canvas{
   height: 100vh;
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(255, 255, 255, 0.2));
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5256303204875701) 60%, rgba(0,0,0,1) 100%);
+  color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-#hero >section{
+#hero > section{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
   width: 75%;
   margin: auto;
 }
 
 #hero h1 {
-  font-size: 7rem;
-  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family:serif;
+  text-shadow: 2px 3px #000;
+  /* color: #0bc6ff; */
 }
 
 #hero span {
-  font-size: 4rem;
-  color: rgb(255, 255, 255);
+  font-size: 2rem;
   text-align: center;
+  display: block;
+}
+
+#hero p {
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 2px 3px #000;
 }
 
 .buttonContainer {
   display: flex;
-  justify-content:space-around;
+  flex-direction: column;
+  justify-content:space-evenly;
   width: 50%;
   margin: 0 auto;
 }
@@ -78,6 +90,7 @@ canvas{
   padding: 10px 10px;
   border-radius: 5%;
   text-align: center;
+  margin: 10px auto;
 }
 /* .button:active {
   transition-duration: 0ms;
@@ -89,6 +102,7 @@ canvas{
 
 .button a{
   color: white;
+  font-weight: bolder;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -140,3 +154,107 @@ canvas{
   position: absolute;
   top: 0;
 }
+
+
+@media screen and (height <= 1000px) , (width <= 1000px) {
+
+  #hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 3px #000;
+  }
+
+  #hero p {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 3px #000;
+  }
+
+  #hero span {
+    font-size: 2.5rem;
+  }
+
+.button {
+  margin: 5px auto;
+}
+
+  .button a{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (height < 810px) , (width < 810px) {
+
+  #hero h1 {
+    font-size: 2rem;
+    text-shadow: 2px 3px #000;
+  }
+
+  #hero p {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 3px #000;
+  }
+
+  #hero span {
+    font-size: 2rem;
+  }
+
+.button {
+  margin: 5px auto;
+}
+
+  .button a{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (height <= 412px) , (width <=412px){
+
+  #hero h1 {
+    font-size: 2rem;
+    text-shadow: 2px 3px #000;
+  }
+
+  #hero p {
+    font-size: 2rem;
+  }
+
+  #hero span {
+    font-size: 1.5rem;
+  }
+
+  .buttonContainer{
+    width: 100%;
+  }
+
+}
+
+/* @media screen  and (max-width: 640px){
+  #hero > section {
+    width: 100%;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+    text-shadow: 2px 3px #000;
+    text-align: center;
+  }
+
+  #hero p {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 3px #000;
+  }
+
+  .buttonContainer {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  
+#hero >section{
+  width: 100%;
+}
+
+} */
