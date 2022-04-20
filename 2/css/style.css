@@ -123,7 +123,7 @@ canvas{
 
 /* ------About Page------ */
 
-#about{
+/* #about{
   position: absolute;
   top: 0;
   width: 100%;
@@ -144,10 +144,7 @@ canvas{
   font-size: 1.5rem;
 }
 
-#about p{
-  width: 95%;
-  margin: 10px auto;
-}
+
 
 #about li{
   list-style: disclosure-closed;
@@ -171,7 +168,7 @@ canvas{
 #about div > section {
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 
 /* ---- particles.js container ---- */
