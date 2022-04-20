@@ -59,6 +59,8 @@ canvas{
   /* color: #0bc6ff; */
 }
 
+/* ------Main Page------ */
+
 #hero{
   width: 100vw;
   height: 100vh;
@@ -90,7 +92,7 @@ canvas{
   text-shadow: 2px 3px #000;
 }
 
-.buttonContainer {
+#hero .buttonContainer {
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
@@ -98,7 +100,7 @@ canvas{
   margin: 0 auto;
 }
 
-.button {
+#hero .button {
   padding: 10px 10px;
   border-radius: 5%;
   text-align: center;
@@ -112,43 +114,14 @@ canvas{
   top: 2px; 
 } */
 
-.button a{
+#hero .button a{
   color: white;
   font-weight: bolder;
   font-size: 1.5rem;
   text-align: center;
 }
 
-.primary {
-  background-color: red;
-  transition-duration: 500ms;
-  transition-property: background-color box-shadow;
-}
-.primary:hover {
-  background-color: rgb(100, 0, 0);
-  transition-duration: 500ms;
-  transition-property: background-color box-shadow;
-  box-shadow: 0px 0px 15px 4px #FF0000;
-}
-
-.secondary {
-  background: blue;
-  transition-duration: 500ms;
-  transition-property: background-color box-shadow;
-}
-
-.secondary:hover {
-  background-color: rgb(0, 0, 100);
-  transition-duration: 500ms;
-  transition-property: background-color box-shadow;
-  /* position: relative;
-  right: 2px;
-  bottom: 2px; */
-  box-shadow: 0px 0px 15px 4px blue;
-}
-
-/* About Section */
-
+/* ------About Page------ */
 
 #about{
   position: absolute;
@@ -156,8 +129,7 @@ canvas{
   width: 100%;
 }
 
-#about > div{
-  width: 80%;
+#about > section{
   margin: 5vh auto;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -187,6 +159,18 @@ canvas{
   display: flex;
   flex-direction: column;
   margin-top: 5vh;
+}
+
+
+#about #mission , #whyUs, #concerns{
+  min-height: 400px;
+  background: black;
+  margin: 20px 0;
+}
+
+#about div > section {
+  width: 80%;
+  margin: 0 auto;
 }
 
 
@@ -282,46 +266,6 @@ canvas{
 
 }
 
-abbr title{
-  font-size: 2rem;
-}
-
-/* @media screen  and (max-width: 640px){
-  #hero > section {
-    width: 100%;
-  }
-
-  #masthead {
-    font-size: 2rem;
-    text-shadow: 2px 3px #000;
-    text-align: center;
-  }
-
-  #hero p {
-    font-size: 2.5rem;
-    text-align: center;
-    text-shadow: 2px 3px #000;
-  }
-
-  .buttonContainer {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  
-#hero >section{
-  width: 100%;
-}
-
-} */
-
-/* body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  padding-bottom: 100px;
-} */
 
 #contact {
   width: 100%;
@@ -570,14 +514,4 @@ hr {
   .send-button {
     width: 99%;
   }
-}
-
-#about #mission , #whyUs{
-
-  height: 400px;
-
-}
-
-#about #concerns {
-  height: 600px;
 }
