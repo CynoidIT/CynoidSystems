@@ -1,0 +1,114 @@
+  #about > section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+  }
+
+  #about h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+  #about h3 {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+  #about p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    width: 75%;
+    margin: 10px auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 20px 0 20px 0;
+  }
+
+  #about li {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    list-style: disclosure-closed; 
+  }
+
+  .aboutBlock.mission {
+    background-image: url(../img/old-map-and-compass.jpg);
+  }
+  .aboutBlock.mission .aboutContent {
+    background-color: rgba(183, 73, 73, 0.7);
+  }
+  .aboutBlock.whyUs {
+    background-image: url(../img/BannerMixSm.jpg);
+  }
+  .aboutBlock.whyUs .aboutContent {
+    background-color: rgba(16, 36, 55, 0.7);
+  }
+  .aboutBlock.concerns {
+    background-image: url(../img/frustrated.webp);
+  } 
+  .aboutBlock.concerns .aboutContent {
+    background-color: rgba(29, 69, 106, 0.7);
+  }
+  .aboutContent {
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    /* color: #fff; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  
+  .aboutBlock {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .aboutText {
+    margin: auto;
+}
+  
+  /* .aboutBlock .aboutContent .aboutText h2 {
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    font-family: "Bitter", serif;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  .aboutBlock .aboutContent .aboutText{
+    font-size: 15px;
+    letter-spacing: 15px;
+    font-weight: normal;
+    padding: 30px 0 20px 0;
+  }
+
+  .aboutBlock .aboutContent .aboutText {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 20px 0 20px 0;
+  } */
+ 
