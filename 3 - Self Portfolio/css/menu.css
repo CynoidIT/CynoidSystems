@@ -190,15 +190,15 @@
 /* -------Button Glitch--------- */
 
   .buttonWrapper {
-      margin: 0 auto;
+      margin: auto;
       width: max-content;
   }
          
   .buttonGlitch,
   .buttonGlitch:after {
     /* width: 150px; */
-    height: 76px;
-    line-height: 78px;
+    /* height: 76px;
+    line-height: 78px; */
     font-size: 1.6rem;
     font-family: 'robotomedium', sans-serif;
     background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
@@ -211,7 +211,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    padding: 0 20px;
+    padding: 15px;
   }
 
   .buttonGlitch:after {
@@ -290,7 +290,7 @@
     .buttonGlitch,
     .buttonGlitch:after {
       /* width: 200px; */
-      height: 86px;
-      line-height: 88px;
+      /* height: 86px;
+      line-height: 88px; */
     }
   }
