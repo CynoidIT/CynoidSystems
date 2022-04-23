@@ -40,9 +40,10 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
   color: white;
   height: 100%;
-  background: rgb(73,152,180);
+  /* background: rgb(73,152,180);
   background: radial-gradient(circle, rgba(73,152,180,1) 0%, rgba(68,141,167,1) 33%, rgba(37,78,92,1) 66%, rgba(0,0,0,1) 100%);
-  background-attachment:fixed;
+  background-attachment:fixed; */
+  
 }
 
 canvas{
