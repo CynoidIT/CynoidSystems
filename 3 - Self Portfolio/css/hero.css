@@ -1,3 +1,23 @@
+:root {
+    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/BannerMixSm.jpg);
+    background-attachment: fixed;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+p, span {
+    text-shadow: 1px 2px #000;
+  }
+
+
+#masthead {
+    text-shadow: 2px 3px #000;
+  }
+
 #hero{
     width: 100vw;
     height: 100vh;
