@@ -1,12 +1,7 @@
 :root {
-    --surface-color: #fff;
-    --curve: 40;
-  }
-  
-  body {
-    font-family: 'robotomedium','Noto Sans JP', sans-serif;
-    background-color: #fef8f8;
-  }
+  --surface-color: #fff;
+  --curve: 40;
+}
 
   #gallery {
     display: flex;

@@ -1,17 +1,3 @@
-:root {
-    width:100%;
-	height:100%;  
-    color: white;
-    background-color: #407e90;
-    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/BannerMixSm.jpg);
-    background-image: no-repeat center center fixed;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 #hero{
     width: 100vw;
     height: 100vh;
@@ -31,13 +17,13 @@
   }
   
   #hero span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     display: block;
   }
   
   #hero p {
-    font-size: 6rem;
+    font-size: 2rem;
     text-align: center;
     text-shadow: 2px 3px #000;
   }
@@ -48,6 +34,7 @@
     justify-content:space-evenly;
     margin: 0 auto;
     z-index: 2;
+    width: 100%;
   }
   
   #hero .button {
@@ -78,63 +65,47 @@
     z-index: 1;
   }
 
-  @media screen and (height <= 1000px) , (width <= 1000px) {
- 
-    #hero p {
-      font-size: 4rem;
-      text-align: center;
-      text-shadow: 2px 3px #000;
-    }
-  
-    #hero span {
-      font-size: 2.5rem;
-    }
-  
-  .button {
-    margin: 5px auto;
-  }
-  
-    .button a{
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media screen and (height < 810px) , (width < 810px) {
-  
-    #hero p {
-      font-size: 3rem;
-      text-align: center;
-      text-shadow: 2px 3px #000;
-    }
-  
-    #hero span {
-      font-size: 2rem;
-    }
-  
-  .button {
-    margin: 5px auto;
-  }
-  
-    .button a{
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media screen and (height <= 412px) , (width <=412px){
-  
-    #hero p {
-      font-size: 2rem;
-    }
-  
-    #hero span {
-      font-size: 1.5rem;
-    }
-  
-    .buttonContainer{
-      width: 100%;
-    }
-  
-  }
 
-
+  @media screen and (width > 480px){
+    #hero p {
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 2px 3px #000;
+    }
     
+    #hero span {
+        font-size: 2rem;
+    }
+    
+    .button {
+        margin: 5px auto;
+    }
+    
+    .button a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (width > 768px){
+    #hero p {
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 2px 3px #000;
+      }
+    
+    #hero span {
+        font-size: 2.5rem;
+    }
+    
+    .button {
+        margin: 5px auto;
+    }
+    
+    .button a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (width > 1040px){
+
+}   
