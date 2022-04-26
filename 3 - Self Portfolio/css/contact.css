@@ -1,5 +1,6 @@
 :root {
-    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/communicate.png);
+    background: rgb(66, 121, 153);
+    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%);
     background-attachment: fixed;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-background-size: cover;
@@ -9,22 +10,64 @@
 }
 
 #contact {
-    width: 100vw;
-    position: absolute;
-    top: 0;
     color: rgb(255, 255, 255);
-    /* overflow: hidden; */
 }
 
-#contact > h1 {
-    font-size: 1.2rem;
-}
-
-#contact {
-    width: 100%;
+#contactBlock{
+    display: flex;
+    padding-top: 7vh;
     height: 100%;
-  }
-  
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+
+#contactSocial ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    padding: 5px 0;
+}
+
+#contactMessage {
+    text-align: center;
+    padding: 25px 0;
+}
+
+#contactForm {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#copyRight {
+    position: fixed;
+    bottom: 5px;
+}
+
+.form-control{
+    font-size: 1.3rem;
+    margin: 8px auto;
+}
+
+button {
+    font-size: 2rem;
+background: red;
+color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* #contactBlock .content {
+    margin: 2% auto;
+    text-align: left;
+}
+
+
+
   .section-header {
     text-align: center;
     margin: 0 auto;
@@ -43,12 +86,12 @@
     padding: 5%;
     position: relative;
     max-width: 840px;
-  }
+  } */
   
   /* Left contact page */
-  .form-horizontal {
+  /* .form-horizontal { */
     /*float: left;*/
-    max-width: 400px;
+    /* max-width: 400px;
     font-family: 'Lato';
     font-weight: 400;
   }
@@ -84,15 +127,15 @@
   
   .alt-send-button:hover {
     transform: translate3d(0px, -29px, 0px);
-  }
+  } */
   
   /* Begin Right Contact Page */
-  .direct-contact-container {
+  /* .direct-contact-container {
     max-width: 400px;
-  }
+  } */
   
   /* Location, Phone, Email Section */
-  .contact-list {
+  /* .contact-list {
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
@@ -130,11 +173,11 @@
   .contact-text a:hover {
     color: #fff;
     text-decoration: none;
-  }
+  } */
   
   
   /* Social Media Icons */
-  .social-media-list {
+  /* .social-media-list {
     position: relative;
     font-size: 22px;
     text-align: center;
@@ -266,4 +309,4 @@
     .send-button {
       width: 99%;
     }
-  }
+  } */
