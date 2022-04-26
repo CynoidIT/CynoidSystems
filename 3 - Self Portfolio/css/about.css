@@ -19,7 +19,7 @@
 
 .aboutBlock {
   display: flex;
-  padding-top: 30%;
+  padding-top: 10vh;
   height: 100%;
   width: 95%;
   margin: auto;

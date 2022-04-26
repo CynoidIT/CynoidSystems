@@ -1,18 +1,24 @@
 :root {
-    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/communicate.png);
+    background-image:url(../img/Face.png);
     background-attachment: fixed;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#masthead {
+    color: black;
 }
 
 #services {
     width: 100vw;
     position: absolute;
     top: 0;
-    color: rgb(255, 255, 255);
+    color: white;
     overflow: hidden;
 }
 
@@ -21,25 +27,26 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    width: 75%;
+    width: 95%;
     margin: auto;
+    padding-top: 15vh;
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
     height: auto;
-    margin: auto;
+    /* margin: auto; */
     flex-flow: wrap;
 }
 
 .serviceItem {
-    max-width: 460px;
+    max-width: 375px;
     margin: 10px auto;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     border-radius: 5%;
     text-align: center;
-    padding: 2% 0;
+    padding: 7% 0;
 }
  
 .aboutContent {
@@ -81,24 +88,43 @@
     -webkit-margin-end: 0px;
     width: 90%;
     margin: 10px auto;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
     padding: 25px 0;
 }
 
-#services ul {
-    width: 80%;
+#serviceList ul {
+    width: 90%;
+    text-align: left;
     margin: auto;
     padding-bottom: 1%;
 }
 
 #serviceList li {
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     padding: 5px 0;
 }
 
 .blind{
     color: white;
     text-decoration: underline;
+}
+
+@media screen and (width > 768px){
+
+    .servicesBlock {
+        padding-top: 5vh;
+    } 
+
+}
+
+@media screen and (width > 1040px){
+    #services {
+        width: 100%;
+    }
+
+    .serviceItem {
+        max-width: 30vw;
+    }
 }

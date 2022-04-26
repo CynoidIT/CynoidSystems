@@ -43,7 +43,6 @@ body {
 @media screen and (width > 768px){
   #masthead {
     font-size: 3rem;
-    text-shadow: 2px 3px #000;
   }
 }
 
