@@ -22,14 +22,35 @@ li{list-style:none}
 }
 
 /* ---- base ---- */
-
+:root {
+  font-family: 'robotomedium';
+}
 
 p, span {
   text-shadow: 1px 2px #000;
 }
 
-canvas{
-  display:block;
-  vertical-align:bottom;
-  height: 100vh;
+@media screen and (height <= 1000px) , (width <= 1000px) {
+
+  #masthead {
+    font-size: 3rem;
+    text-shadow: 2px 3px #000;
+  }
 }
+
+@media screen and (height < 810px) , (width < 810px) {
+  
+  #masthead {
+    font-size: 2rem;
+    text-shadow: 2px 3px #000;
+  }
+}
+
+@media screen and (height <= 412px) , (width <=412px){
+  
+  #masthead {
+    font-size: 2rem;
+    text-shadow: 2px 3px #000;
+  }
+}
+
