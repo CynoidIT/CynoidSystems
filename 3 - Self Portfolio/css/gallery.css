@@ -1,20 +1,28 @@
 :root {
-  --surface-color: #fff;
-  --curve: 40;
-    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/communicate.png);
-    background-attachment: fixed;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+  background: rgb(66, 121, 153);
+  background-attachment: fixed;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: none;  
+    --surface-color: #fff;
+    --curve: 40;
+  }
+
+  body {
+    background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%);
+ 
+  }
 
   #gallery {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100%;
+    margin: auto;
+    padding: 5vh 0;
   }
  
   #gallery > div {
@@ -22,9 +30,9 @@
   }
 
   .cards {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; */
+    gap: 2rem;
     /* margin: 2rem 7vw; */
     display: flex;
     justify-content: space-evenly;
@@ -42,20 +50,20 @@
     position: relative;
     display: block;
     height: 100%;  
-    width: 90%;
+    width: 95%;
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
   }
   
   .card__image {      
-    min-width: 400px;
+    width: 95vw;
     max-width: 550px;
     height: auto;
     /* object-fit: contain; */
   }
   
-  /* .card__overlay {
+  .card__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -137,4 +145,4 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-  }     */
+  }    
