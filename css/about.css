@@ -1,12 +1,17 @@
 :root {
-  background: white;
-  background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/old-map-and-compass.jpg);
+  background: rgb(66, 121, 153);
   background-attachment: fixed;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-shadow: none;  
+    --surface-color: #fff;
+    --curve: 40;
+  background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%);
+  /* background: white; */
+  /* background-image:radial-gradient(circle, rgba(0,0,0,0.1390756986388305) 0%, rgba(0,0,0,0.33235300956320024) 33%, rgba(0,0,0,0.6040616930365896) 82%, rgba(0,0,0,1) 100%), url(../img/old-map-and-compass.jpg); */
 }
 
 #about {
@@ -20,15 +25,32 @@
   display: flex;
   padding-top: 10vh;
   height: 100%;
-  width: 95%;
+  width: 95vw;
   margin: auto;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .aboutText {
+  display: inline-block;
   margin: 2% auto;
   text-align: left;
+}
+
+.aboutHead {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap-reverse;
+}
+
+.aboutTitle {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutText img{
+  height: 190px;
 }
 
   #about h2 {
@@ -63,3 +85,9 @@
     letter-spacing: 1px;
     padding: 30px 0;
   }
+
+@media screen and (min-width: 850px) {
+  .aboutBlock {
+    width: 85vw;
+  }
+}
